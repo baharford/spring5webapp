@@ -32,6 +32,14 @@ public class Book {
 	public Book() {
 	}
 	
+	public Publisher getPublisher() {
+		return publisher;
+	}
+
+	public void setPublisher(Publisher publisher) {
+		this.publisher = publisher;
+	}
+
 	public Book(String title, String isbn) {
 		this.title = title;
 		this.isbn = isbn;
@@ -61,9 +69,17 @@ public class Book {
 		this.isbn = isbn;
 	}
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", title=" + title + ", isbn=" + isbn + ", authors=" + authors + "]";
+		return "Book [id=" + id + ", title=" + title + ", isbn=" + isbn + ", authors=" + "]";
 	}
 
 	@Override
